@@ -20,29 +20,30 @@ The text editor is part of the standard [Sanos SDK](sdk.htm) distribution and ca
 
 The text editor can also be used on Linux. There is only one source file so you just download this and compile the text editor using GCC. It does not depend on any special libraries, so it should compile on most systems that have GCC installed. The -Os option is used to generate a small binary. On my Linux box the editor binary is 23,493 bytes.
 
-wget http://www.jbox.dk/downloads/edit.c
-gcc -o edit edit.c -Os
-./edit edit.c
+    wget http://www.jbox.dk/downloads/edit.c
+    gcc -o edit edit.c -Os
+    ./edit edit.c
 
 Use Ctrl-Q to exit the editor.
 
 #### Editor Command Summary
 
-<up>        Move one line up (\*)         Ctrl+N  New editor
-<down>      Move one line down (\*)       Ctrl+O  Open file
-<left>      Move one character left (\*)  Ctrl+S  Save file
-<right>     Move one character right (\*) Ctrl+W  Close file
-<pgup>      Move one page up (\*)         Ctrl+Q  Quit
-<pgdn>      Move one page down (\*)       Ctrl+P  Pipe command
-<home>      Move to start of line (\*)    Ctrl+A  Select all
-<end>       Move to end of line (\*)      Ctrl+C  Copy selection to clipboard
-Ctrl+<home> Move to start of file (\*)    Ctrl+X  Cut selection to clipboard
-Ctrl+<end>  Move to end of file (\*)      Ctrl+V  Paste from clipboard
-<backspace> Delete previous character    Ctrl+Z  Undo
-<delete>    Delete current character     Ctrl+R  Redo
-Ctrl+<tab>  Next editor                  Ctrl+F  Find text
-<tab>       Indent selection             Ctrl+G  Find next
-Shift+<tab> Unindent selection           Ctrl+L  Goto line
-                                         F1      Help
-(\*) Extends selection if combined        F3      Navigate to file
-    with Shift                           F5      Redraw screen
+    <up>        Move one line up (\*)         Ctrl+N  New editor
+    <down>      Move one line down (\*)       Ctrl+O  Open file
+    <left>      Move one character left (\*)  Ctrl+S  Save file
+    <right>     Move one character right (\*) Ctrl+W  Close file
+    <pgup>      Move one page up (\*)         Ctrl+Q  Quit
+    <pgdn>      Move one page down (\*)       Ctrl+P  Pipe command
+    <home>      Move to start of line (\*)    Ctrl+A  Select all
+    <end>       Move to end of line (\*)      Ctrl+C  Copy selection to clipboard
+    Ctrl+<home> Move to start of file (\*)    Ctrl+X  Cut selection to clipboard
+    Ctrl+<end>  Move to end of file (\*)      Ctrl+V  Paste from clipboard
+    <backspace> Delete previous character     Ctrl+Z  Undo
+    <delete>    Delete current character      Ctrl+R  Redo
+    Ctrl+<tab>  Next editor                   Ctrl+F  Find text
+    <tab>       Indent selection              Ctrl+G  Find next
+    Shift+<tab> Unindent selection            Ctrl+L  Goto line
+                                              F1      Help
+    (\*) Extends selection if combined        F3      Navigate to file
+        with Shift                            F5      Redraw screen
+ 
